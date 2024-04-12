@@ -13,6 +13,10 @@ public class BigInt {
         this.Number = b.Get();
     }
 
+    public String DigitAt(int n) {
+        return this.Number.charAt(n) + "0";
+    }
+
     public void Set(String s) {
         this.Number = s;
     }
