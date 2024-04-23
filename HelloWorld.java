@@ -9,6 +9,7 @@ class HelloWorld {
         TwoIntoTen();
         TwoBaseIntoEight();
         deleteZero();
+        Integral();
     }
 
     public static void BaseTwo() {
@@ -89,10 +90,12 @@ class HelloWorld {
     }
 
     public static void deleteZero() {
+
         int n = 50104017;
         int res = 0;
         int p = 1;
         int r = 0;
+
         while (n > 0) {
             r = n % 10;
             if (r != 0) {
@@ -100,9 +103,19 @@ class HelloWorld {
                 p = p * 10;
             }
             n = n / 10;
-
         }
+
         System.out.println("////////two into 8");
         System.out.println(res);
+    }
+
+    public static void Integral() {
+        double dt = 0.00001;
+        double s = 0;
+        for (double i = 1.0; i < 5.0; i = i + dt) {
+            s = s + dt * (1 / i);
+        }
+        System.out.println("////////Calculate integral 1/ln(x)///////");
+        System.out.println(s);
     }
 }
