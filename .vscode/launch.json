@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "FrmMain",
+      "request": "launch",
+      "mainClass": "test02.FrmMain",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "test02.Main",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "Main",
       "request": "launch",
       "mainClass": "javaexcersice.Main",

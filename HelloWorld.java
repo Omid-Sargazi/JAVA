@@ -10,6 +10,8 @@ class HelloWorld {
         TwoBaseIntoEight();
         deleteZero();
         Integral();
+        Factorial();
+        Comofactorial();
     }
 
     public static void BaseTwo() {
@@ -117,5 +119,43 @@ class HelloWorld {
         }
         System.out.println("////////Calculate integral 1/ln(x)///////");
         System.out.println(s);
+    }
+
+    public static void Factorial() {
+        int q = 3;
+        int p = 1;
+        for (int i = 1; i <= q; i++) {
+            p = p * i;
+        }
+        System.out.println("/////////Factorial////");
+        System.out.println(p);
+    }
+
+    public static void Comofactorial() {
+        int a = 6;
+        int b = 5;
+        int p1 = 1;
+        int p2 = 1;
+        int p3 = 1;
+        int p = 0;
+        // a!
+        for (int i = 1; i <= a; i++) {
+            p1 = i * p1;
+        }
+        System.out.println(p1);
+
+        // b!
+        for (int i = 1; i <= b; i++) {
+            p2 = i * p2;
+        }
+        for (int i = 1; i <= a - b; i++) {
+            p3 = p3 * i;
+        }
+        // a!/(b!*(b!-a!))
+        p = p1 / (p2 * p3);
+
+        System.out.println("////////composition");
+        System.out.println(p);
+
     }
 }
