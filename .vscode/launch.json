@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "pexercise",
+      "request": "launch",
+      "mainClass": "projectnew.pexercise",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "p73",
+      "request": "launch",
+      "mainClass": "projectnew.p73",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "prime1000",
+      "request": "launch",
+      "mainClass": "projectnew.prime1000",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "project1",
+      "request": "launch",
+      "mainClass": "test01.project1",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "FrmMain",
       "request": "launch",
       "mainClass": "test02.FrmMain",
