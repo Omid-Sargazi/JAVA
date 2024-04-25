@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Prime1",
+      "request": "launch",
+      "mainClass": "projectnew.Prime1",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "calc",
       "request": "launch",
       "mainClass": "projectnew.calc",
