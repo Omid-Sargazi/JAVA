@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "calc",
+      "request": "launch",
+      "mainClass": "projectnew.calc",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "pexercise",
       "request": "launch",
       "mainClass": "projectnew.pexercise",
