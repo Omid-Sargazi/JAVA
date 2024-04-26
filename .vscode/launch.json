@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "buttonwithswing",
+      "request": "launch",
+      "mainClass": "projectnew.buttonwithswing",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "calender",
       "request": "launch",
       "mainClass": "projectnew.calender",
