@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "project61",
+      "request": "launch",
+      "mainClass": "projectnew.project61",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "simplejframe",
+      "request": "launch",
+      "mainClass": "projectnew.simplejframe",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "Prime1",
       "request": "launch",
       "mainClass": "projectnew.Prime1",
