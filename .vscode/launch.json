@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "calender",
+      "request": "launch",
+      "mainClass": "projectnew.calender",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "gmaincalc",
+      "request": "launch",
+      "mainClass": "projectnew.gmaincalc",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "project115",
       "request": "launch",
       "mainClass": "projectnew.project115",
