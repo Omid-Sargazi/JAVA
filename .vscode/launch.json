@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "gcalculator.Main",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "longnumberbasetwo",
       "request": "launch",
       "mainClass": "projectnew.longnumberbasetwo",

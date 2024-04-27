@@ -20,7 +20,7 @@ public class longnumberbasetwo {
 
         }
 
-        for (int x = Ac; x >= 0; x--) {
+        for (int x = Ac - 1; x >= 0; x--) {
             System.out.print("" + A[x]);
         }
 
