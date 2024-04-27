@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "longnumberbasetwo",
+      "request": "launch",
+      "mainClass": "projectnew.longnumberbasetwo",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "swingcalclistener",
+      "request": "launch",
+      "mainClass": "projectnew.swingcalclistener",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "buttonwithswing",
       "request": "launch",
       "mainClass": "projectnew.buttonwithswing",
