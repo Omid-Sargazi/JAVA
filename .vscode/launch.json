@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "rotatelist",
+      "request": "launch",
+      "mainClass": "projectnew.rotatelist",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "Main",
       "request": "launch",
       "mainClass": "gcalculator.Main",
