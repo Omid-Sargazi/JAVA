@@ -22,6 +22,24 @@ public class mininarray {
 
             System.out.print("" + A[x] + " ");
         }
+        bubbleSort();
+    }
 
+    public static void bubbleSort() {
+        int[] A = { 10, 2, 3, 4, 5, 6, 4, 7, -100 };
+        int n = A.length;
+        int temp = 0;
+        for (int x = 0; x < n; x++) {
+            for (int y = x; y < n; y++) {
+                if (A[x] > A[y]) {
+                    temp = A[y];
+                    A[y] = A[x];
+                    A[x] = temp;
+                }
+            }
+        }
+        for (int x = 0; x < n; x++) {
+            System.out.print("B: " + A[x]);
+        }
     }
 }
