@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MergeSort",
+      "request": "launch",
+      "mainClass": "javaexcersice.MergeSort",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "gButton",
+      "request": "launch",
+      "mainClass": "gpaint.gButton",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "gcalc",
       "request": "launch",
       "mainClass": "gpaint.gcalc",

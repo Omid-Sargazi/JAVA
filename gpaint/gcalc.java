@@ -20,12 +20,21 @@ public class gcalc extends JFrame {
     private final static int gWidth = 600;
     private final static int gheight = 500;
 
-    private JButton btnDigits[] = new JButton[10];
-    private JButton btnc = new JButton();
-    private JButton btnSum = new JButton();
-    private JButton btnEqual = new JButton();
+    private gButton btnDigits[] = new gButton[10];
+    private gButton btnc = new gButton(this);
+    private gButton btnSum = new gButton(this);
+    private gButton btnEqual = new gButton(this);
 
     private long n1, n2;
+
+    public void setNumberToText(String s) {
+        int ii = Integer.parseInt(s);
+        long num = Long.parseLong(text.getText());
+        if (((int) Math.log10(num) + 1) < 19) {
+            num = num * 10 + ii;
+            text.setText(num + "");
+        }
+    }
 
     public gcalc() {
         super("Gcalc...");
@@ -55,7 +64,7 @@ public class gcalc extends JFrame {
         btns.setLayout(new FlowLayout());
 
         for (int i = 0; i < 10; i++) {
-            btnDigits[i] = new JButton();
+            btnDigits[i] = new gButton(this);
             btnDigits[i].setPreferredSize(new Dimension(45, 30));
             btnDigits[i].setText("" + i);
             final int ii = i;
@@ -64,13 +73,7 @@ public class gcalc extends JFrame {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     // TODO Auto-generated method stub
-                    long num = Long.parseLong(text.getText());
-
-                    if (((int) Math.log10(num) + 1) < 19) {
-
-                        num = num * 10 + ii;
-                        text.setText(num + "");
-                    }
+                    setNumberToText(ii + "");
                     throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
                 }
 
