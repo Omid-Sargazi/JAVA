@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "gcalc",
+      "request": "launch",
+      "mainClass": "gpaint.gcalc",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "mininarray",
       "request": "launch",
       "mainClass": "projectnew.mininarray",
