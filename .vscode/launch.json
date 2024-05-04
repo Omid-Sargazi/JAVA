@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "bigNumber",
+      "request": "launch",
+      "mainClass": "javaexcersice.bigNumber",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "MergeSort",
       "request": "launch",
       "mainClass": "javaexcersice.MergeSort",

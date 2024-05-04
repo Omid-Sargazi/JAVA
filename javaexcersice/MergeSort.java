@@ -30,4 +30,14 @@ public class MergeSort {
             System.out.print("" + C[x] + ",");
     }
 
+    public static void BinarySearch() {
+        int A[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 11, 11, 13, 14, 112, 112, 113, 1000 };
+        int left = 0;
+        int right = A.length - 1;
+        int res = -1;
+        while (left <= right) {
+
+        }
+    }
+
 }
