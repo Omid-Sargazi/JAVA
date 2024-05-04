@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "toolBox",
+      "request": "launch",
+      "mainClass": "gpaint.toolBox",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "gpaint",
+      "request": "launch",
+      "mainClass": "gpaint.gpaint",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "bigNumber",
       "request": "launch",
       "mainClass": "javaexcersice.bigNumber",
