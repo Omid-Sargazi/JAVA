@@ -21,8 +21,8 @@ public class gpaint extends JFrame {
 
         ////////////////////////// TOOLS...
         tools = new toolBox();
-        draw = new DrawPanel();
         info = new InfoPanel();
+        draw = new DrawPanel(info);
 
         this.add(tools);
         this.add(draw);
