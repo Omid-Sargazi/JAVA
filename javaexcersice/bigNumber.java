@@ -79,23 +79,29 @@ public class bigNumber {
         int B[] = { 9, 2, 3, 4, 5, 6, 7 };
         int cA = A.length;
         int cB = B.length;
-        int t = 0;
-        int p, q = 0;
+        int t, t2 = 0;
+        int q = 0;
+        int p = 0;
         int C[] = new int[cA + cB];
         int cC = cA;
+
         for (int i = 0; i < C.length; i++) {
             C[i] = 0;
         }
+        for (int y = 0; y < B.length; y++) {
 
-        for (int x = 0; x < cA; x++) {
-            t = B[0] * A[x] + q;
-            C[x] = t % 10;
-            q = t / 10;
-        }
-        // cC++;
-        while (q > 0) {
-            C[cC++] = q % 10;
-            q = q / 10;
+            for (int x = 0; x < cA; x++) {
+                t = B[y] * A[x] + q;
+                t2 = (t % 10 + C[x + y] + p);
+                C[x + y] = t2 % 10;
+                p = t2 / 10;
+                q = t / 10;
+            }
+            // cC++;
+            while (q > 0) {
+                C[cC++] = q % 10;
+                q = q / 10;
+            }
         }
 
         for (int i = 0; i < C.length; i++) {
