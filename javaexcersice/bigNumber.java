@@ -5,7 +5,8 @@ public class bigNumber {
         System.out.println("Big Number");
         // bignumber();
         // AddTwoNumber();
-        multipleTwonumber();
+        // multipleTwonumber();
+        PascalRectangle();
     }
 
     public static void bignumber() {
@@ -82,7 +83,7 @@ public class bigNumber {
         int t, t2 = 0;
         int q = 0;
         int p = 0;
-        int C[] = new int[cA + cB];
+        int C[] = new int[cA + cB + 1];
         int cC = cA;
 
         for (int i = 0; i < C.length; i++) {
@@ -108,6 +109,25 @@ public class bigNumber {
             {
                 System.out.print(" " + C[i] + ",");
             }
+        }
+    }
+
+    public static void PascalRectangle() {
+        int A[] = new int[1000];
+        A[0] = 1;
+        A[1] = 1;
+        int cA = 2;
+        for (int i = 0; i < 10; i++) {
+
+            A[cA] = 1;
+            cA++;
+            for (int x = cA - 2; x >= 1; x--) {
+                A[x] = A[x - 1] + A[x];
+            }
+            for (int x = 0; x < cA; x++) {
+                System.out.print(" " + A[x] + ",");
+            }
+            System.out.println("\n" + "");
         }
     }
 }
