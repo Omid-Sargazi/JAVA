@@ -4,7 +4,8 @@ public class bigNumber {
     public static void main(String[] args) {
         System.out.println("Big Number");
         // bignumber();
-        AddTwoNumber();
+        // AddTwoNumber();
+        multipleTwonumber();
     }
 
     public static void bignumber() {
@@ -70,6 +71,37 @@ public class bigNumber {
         }
         for (int x = 0; x < max + 1; x++) {
             System.out.print("" + C[x] + ",");
+        }
+    }
+
+    public static void multipleTwonumber() {
+        int A[] = { 1, 2, 3, 4, 5, 6, 7 };
+        int B[] = { 9, 2, 3, 4, 5, 6, 7 };
+        int cA = A.length;
+        int cB = B.length;
+        int t = 0;
+        int p, q = 0;
+        int C[] = new int[cA + cB];
+        int cC = cA;
+        for (int i = 0; i < C.length; i++) {
+            C[i] = 0;
+        }
+
+        for (int x = 0; x < cA; x++) {
+            t = B[0] * A[x] + q;
+            C[x] = t % 10;
+            q = t / 10;
+        }
+        // cC++;
+        while (q > 0) {
+            C[cC++] = q % 10;
+            q = q / 10;
+        }
+
+        for (int i = 0; i < C.length; i++) {
+            {
+                System.out.print(" " + C[i] + ",");
+            }
         }
     }
 }
