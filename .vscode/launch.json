@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "deleteRepeatNumber",
+      "request": "launch",
+      "mainClass": "javaexcersice.deleteRepeatNumber",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "toolBox",
       "request": "launch",
       "mainClass": "gpaint.toolBox",
