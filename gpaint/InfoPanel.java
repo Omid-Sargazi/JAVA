@@ -7,7 +7,7 @@ import javax.swing.JPanel;
 import javax.swing.JLabel;
 
 public class InfoPanel extends JPanel {
-    private JLabel xy;
+    private JLabel infos[];
 
     public InfoPanel() {
         super();
@@ -16,15 +16,19 @@ public class InfoPanel extends JPanel {
         setPreferredSize(new Dimension(100, gpaint.gHeight - 20));
         this.setLayout(new FlowLayout());
 
-        xy = new JLabel();
-        xy.setPreferredSize(new Dimension(90, 30));
-        xy.setOpaque(true);
-        xy.setBackground(Color.red);
-        this.add(xy);
+        infos = new JLabel[10];
+        for (int i = 0; i < 10; i++) {
+            infos[i] = new JLabel();
+            infos[i].setPreferredSize(new Dimension(95, 30));
+            infos[i].setOpaque(true);
+            infos[i].setBackground(Color.red);
+            this.add(infos[i]);
+        }
+    }
+
+    public void setInfo(String s, int i) {
+        infos[i].setText(s);
 
     }
 
-    public void setxy(String s) {
-        xy.setText(s);
-    }
 }
