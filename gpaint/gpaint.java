@@ -10,8 +10,8 @@ public class gpaint extends JFrame {
     public static final int gHeight = 500;
 
     private toolBox tools;
-    private DrawPanel draw;
     private InfoPanel info;
+    private DrawPanel draw;
 
     public gpaint() {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
