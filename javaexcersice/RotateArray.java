@@ -4,7 +4,8 @@ class RotateArray {
     public static void main(String[] args) {
         System.out.println("" + "Rotate Array");
         // rotateLeft();
-        deletePrimerNumber();
+        // deletePrimerNumber();
+        MaxRepeated();
 
     }
 
@@ -65,8 +66,44 @@ class RotateArray {
             System.out.print("A[" + i + "]= " + A[i] + "  ");
         }
         System.out.println("\n================================");
-        for (int i = 0; i < cB; i++) {
+        for (int i = 0; i < cB + 1; i++) {
             System.out.print("B[" + i + "]= " + B[i] + "  ");
         }
+    }
+
+    public static void MaxRepeated() {
+
+        int A[] = { 1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 10, 1, 1, 1, 19, 2, 12, 15, 2, 3 };
+        int n = A.length;
+        int max = 0;
+        int MN = 0;
+        for (int i = 0; i < n; i++) {
+            int count = 0;
+            for (int x = 0; x < n; x++) {
+                if (A[i] == A[x]) {
+                    count++;
+                }
+            }
+            if (count >= max) {
+                max = count;
+                MN = A[i];
+            }
+
+        }
+
+        for (int i = 0; i < n; i++) {
+            int count = 0;
+            for (int x = i; x < n; x++) {
+                if (A[i] == A[x]) {
+                    count++;
+                }
+            }
+            if (count == max) {
+                System.out.print("" + A[i] + ", " + max);
+            }
+        }
+
+        // System.out.println("" + max + " " + MN);
+
     }
 }

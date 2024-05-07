@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "gMain",
+      "request": "launch",
+      "mainClass": "gpaint.gMain.gMain",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "RotateArray",
       "request": "launch",
       "mainClass": "javaexcersice.RotateArray",
