@@ -3,7 +3,8 @@ package javaexcersice;
 class RotateArray {
     public static void main(String[] args) {
         System.out.println("" + "Rotate Array");
-        rotateLeft();
+        // rotateLeft();
+        deletePrimerNumber();
 
     }
 
@@ -33,6 +34,39 @@ class RotateArray {
         A[n - 1] = temp;
         for (int i = 0; i <= n - 1; i++) {
             System.out.print("A[" + i + "]:" + A[i] + " ");
+        }
+    }
+
+    public static void deletePrimerNumber() {
+        int A[] = { 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 };
+        int n = A.length;
+        int[] B = new int[n];
+        int cA = n;
+        int cB = 0;
+        int iA = 0;
+        while (iA < cA) {
+            int flag = 0;
+            for (int j = 1; j <= A[iA]; j++) {
+                if (A[iA] % j == 0) {
+                    flag++;
+                }
+            }
+            if (flag != 2) {
+                iA++;
+            } else {
+                B[cB++] = A[iA];
+                for (int x = iA + 1; x < cA; x++) {
+                    A[x - 1] = A[x];
+                }
+                cA--;
+            }
+        }
+        for (int i = 0; i < cA; i++) {
+            System.out.print("A[" + i + "]= " + A[i] + "  ");
+        }
+        System.out.println("\n================================");
+        for (int i = 0; i < cB; i++) {
+            System.out.print("B[" + i + "]= " + B[i] + "  ");
         }
     }
 }
