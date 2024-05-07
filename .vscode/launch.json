@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "RotateArray",
+      "request": "launch",
+      "mainClass": "javaexcersice.RotateArray",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "deleteRepeatNumber",
       "request": "launch",
       "mainClass": "javaexcersice.deleteRepeatNumber",
