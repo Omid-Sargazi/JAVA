@@ -20,10 +20,16 @@ public class DrawPanel extends JComponent {
 
     @Override
     public void paintComponent(Graphics g) {
-
         super.paintComponent(g);
+        initialize(g);
+        g.setColor(Color.red);
+        g.drawLine(100, 100, 200, 200);
+    } // DrawPanel
+
+    private void initialize(Graphics g) {
+        g.setColor(new Color(0, 0, 0));
+        g.fillRect(1, 1, getWidth() - 2, getHeight() - 2);
         g.setColor(Color.red);
         g.drawRect(1, 1, getWidth() - 2, getHeight() - 2);
-
-    } // DrawPanel
+    }
 }
