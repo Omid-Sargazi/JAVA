@@ -5,7 +5,8 @@ class RotateArray {
         System.out.println("" + "Rotate Array");
         // rotateLeft();
         // deletePrimerNumber();
-        MaxRepeated();
+        // MaxRepeated();
+        BigFactorial();
 
     }
 
@@ -105,5 +106,33 @@ class RotateArray {
 
         // System.out.println("" + max + " " + MN);
 
+    }
+
+    public static void BigFactorial() {
+        // int[] A = { 1, 2, 3, 4, 5, 6, 0, 0, 1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        // };
+        int A[] = new int[1000];
+        int cA = 1;
+        A[0] = 1;
+        // int n = A.length;
+        int num = 122;
+        int q = 0;
+        for (int x = 1; x <= A.length; x++) {
+            for (int i = 0; i < cA; i++) {
+                int t = ((A[i] * x) + q);
+                A[i] = t % 10;
+                q = t / 10;
+            }
+            if (q > 0) {
+                A[cA++] = q % 10;
+                q = q / 10;
+            }
+            if (x % 100 == 0) {
+                System.out.println("" + x);
+            }
+        }
+        for (int i = cA - 1; i >= 0; i--) {
+            System.out.print("" + A[i] + "");
+        }
     }
 }
