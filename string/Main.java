@@ -9,7 +9,8 @@ public class Main {
         // System.out.println("" + i + ":" + c);
         // }
         // searchString();
-        stringWork();
+        // stringWork();
+        MultipelTwoArray();
 
     }
 
@@ -67,5 +68,33 @@ public class Main {
 
         }
 
+    }
+
+    static void MultipelTwoArray() {
+        int A[] = { 1, 3, 4, 5, 6, };
+        // int A[] = { 1, 3 };
+        int B[] = { 11, 2, 3, 4, 5, 6, 7, 8, 9,
+        };
+        // int B[] = { 9, 2 };
+        int cA = A.length;
+        int cB = B.length;
+        int C[] = new int[cA + cB];
+        for (int i = 0; i < cA; i++) {
+            C[i] = 0;
+        }
+        int q = 0;
+        int cC = cA;
+        for (int i = 0; i < cA; i++) {
+            int temp = A[i] * B[0] + q;
+            C[i] = temp % 10;
+            q = temp / 10;
+
+        }
+        if (q > 0) {
+            C[cC++] = q % 10;
+        }
+        for (int i = cC - 1; i >= 0; i--) {
+            System.out.println("" + C[i] + "");
+        }
     }
 }
