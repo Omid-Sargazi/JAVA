@@ -13,7 +13,7 @@ import java.awt.event.MouseListener;
 
 public class DrawPanel extends JComponent implements MouseMotionListener, MouseListener {
     private InfoPanel info;
-    private gLine lines[] = new gLine[10];
+    private gLine lines[] = new gLine[100];
     private int cLine = 0;
     private int x1, y1;
 
@@ -32,14 +32,14 @@ public class DrawPanel extends JComponent implements MouseMotionListener, MouseL
         gInitialize(g);
 
         for (int i = 0; i < cLine; i++) {
-            g.setColor(Color.red);
+            g.setColor(lines[i].color);
             g.drawLine(lines[i].x1, lines[i].x2, lines[i].y1, lines[i].y2);
         }
 
     }
 
     private void gInitialize(Graphics g) {
-        g.setColor(Color.black);
+        g.setColor(Color.white);
         g.fillRect(0, 0, gMain.gWIdth - 120, gMain.gHeight - 20);
         g.setColor(Color.red);
         g.drawRect(1, 1, getWidth() - 2, getHeight() - 2);
@@ -95,6 +95,7 @@ public class DrawPanel extends JComponent implements MouseMotionListener, MouseL
         line.y1 = y1;
         line.x2 = e.getX();
         line.y2 = e.getY();
+        line.color = new Color((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256));
         lines[cLine++] = line;
         this.repaint();
     }
