@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "gMain",
+      "request": "launch",
+      "mainClass": "gMain.gMain",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "Main",
       "request": "launch",
       "mainClass": "string.Main",

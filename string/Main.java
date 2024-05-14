@@ -71,30 +71,59 @@ public class Main {
     }
 
     static void MultipelTwoArray() {
-        int A[] = { 1, 3, 4, 5, 6, };
-        // int A[] = { 1, 3 };
-        int B[] = { 11, 2, 3, 4, 5, 6, 7, 8, 9,
-        };
-        // int B[] = { 9, 2 };
-        int cA = A.length;
-        int cB = B.length;
-        int C[] = new int[cA + cB];
-        for (int i = 0; i < cA; i++) {
-            C[i] = 0;
-        }
-        int q = 0;
-        int cC = cA;
-        for (int i = 0; i < cA; i++) {
-            int temp = A[i] * B[0] + q;
-            C[i] = temp % 10;
-            q = temp / 10;
+        Scanner input = new Scanner(System.in);
 
+        System.out.print("\n Enter Number1: ");
+        String S1 = input.nextLine();
+
+        int A[] = new int[S1.length()];
+        int cA = A.length;
+        for (int i = 0; i < cA; i++) {
+            A[i] = S1.charAt(cA - i - 1) - '0';
         }
-        if (q > 0) {
-            C[cC++] = q % 10;
+
+        System.out.print("\n Enter Number2: ");
+        String S2 = input.nextLine();
+        int cB = S2.length();
+
+        int B[] = new int[S2.length()];
+        for (int i = 0; i < cB; i++) {
+            B[i] = S2.charAt(cB - i - 1) - '0';
         }
-        for (int i = cC - 1; i >= 0; i--) {
-            System.out.println("" + C[i] + "");
+
+        for (int i = 0; i < S2.length(); i++) {
+            System.out.print(B[i]);
         }
+        for (int i = 0; i < S1.length(); i++) {
+            System.out.print(A[i]);
+        }
+
+        // int B[] = { 9, 2 };
+        // int cA = A.length;
+        // int cB = B.length;
+        // int C[] = new int[cA + cB + 1];
+        // for (int i = 0; i < cA; i++) {
+        // C[i] = 0;
+        // }
+
+        // for (int j = 0; j < cB; j++) {
+        // int q = 0;
+        // int cC = j;
+        // int q1 = 0;
+        // for (int i = 0; i < cA; i++) {
+        // int t = A[i] * B[1] + q;
+        // int t1 = (C[cC] + t % 10) + q1;
+        // C[cC++] = t1 % 10;
+        // q1 = t1 / 10;
+        // q = t / 10;
+
+        // }
+        // if (q + q1 > 0) {
+        // C[cC++] += q + q1;
+        // }
     }
+    // for (int i = cC - 1; i >= 0; i--) {
+    // System.out.println("" + C[i] + "");
+    // }
+
 }
