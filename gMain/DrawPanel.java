@@ -15,6 +15,7 @@ public class DrawPanel extends JComponent implements MouseMotionListener, MouseL
     private InfoPanel info;
     private gLine lines[] = new gLine[100];
     private int cLine = 0;
+    private int cLineAll = 0;
     private int x1, y1;
 
     public DrawPanel(InfoPanel info) {
@@ -33,7 +34,7 @@ public class DrawPanel extends JComponent implements MouseMotionListener, MouseL
 
         for (int i = 0; i < cLine; i++) {
             g.setColor(lines[i].color);
-            g.drawLine(lines[i].x1, lines[i].x2, lines[i].y1, lines[i].y2);
+            g.drawRect(lines[i].x1, lines[i].x2, lines[i].y1, lines[i].y2);
         }
 
     }
@@ -45,6 +46,29 @@ public class DrawPanel extends JComponent implements MouseMotionListener, MouseL
         g.drawRect(1, 1, getWidth() - 2, getHeight() - 2);
 
         g.drawLine(100, 100, 200, 200);
+    }
+
+    public void clear() {
+        cLine = 0;
+        repaint();
+    }
+
+    public void clearLast() {
+        if (cLine > 0)
+            cLine--;
+        repaint();
+    }
+
+    public void Undo() {
+        cLine = cLineAll;
+        repaint();
+    }
+
+    public void UndoLast() {
+        if (cLine < cLineAll) {
+            cLine++;
+        }
+        repaint();
     }
 
     @Override
@@ -97,6 +121,7 @@ public class DrawPanel extends JComponent implements MouseMotionListener, MouseL
         line.y2 = e.getY();
         line.color = new Color((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256));
         lines[cLine++] = line;
+        cLineAll++;
         this.repaint();
     }
 }

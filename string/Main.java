@@ -10,7 +10,9 @@ public class Main {
         // }
         // searchString();
         // stringWork();
-        MultipelTwoArray();
+        // MultipelTwoArray();
+        // StringToNumber();
+        ShowCharacter();
 
     }
 
@@ -70,60 +72,78 @@ public class Main {
 
     }
 
-    static void MultipelTwoArray() {
-        Scanner input = new Scanner(System.in);
+    // static void MultipelTwoArray() {
+    // Scanner input = new Scanner(System.in);
 
-        System.out.print("\n Enter Number1: ");
-        String S1 = input.nextLine();
+    // System.out.print("\n Enter Number1: ");
+    // String S1 = input.nextLine();
 
-        int A[] = new int[S1.length()];
-        int cA = A.length;
-        for (int i = 0; i < cA; i++) {
-            A[i] = S1.charAt(cA - i - 1) - '0';
-        }
-
-        System.out.print("\n Enter Number2: ");
-        String S2 = input.nextLine();
-        int cB = S2.length();
-
-        int B[] = new int[S2.length()];
-        for (int i = 0; i < cB; i++) {
-            B[i] = S2.charAt(cB - i - 1) - '0';
-        }
-
-        for (int i = 0; i < S2.length(); i++) {
-            System.out.print(B[i]);
-        }
-        for (int i = 0; i < S1.length(); i++) {
-            System.out.print(A[i]);
-        }
-
-        // int B[] = { 9, 2 };
-        // int cA = A.length;
-        // int cB = B.length;
-        // int C[] = new int[cA + cB + 1];
-        // for (int i = 0; i < cA; i++) {
-        // C[i] = 0;
-        // }
-
-        // for (int j = 0; j < cB; j++) {
-        // int q = 0;
-        // int cC = j;
-        // int q1 = 0;
-        // for (int i = 0; i < cA; i++) {
-        // int t = A[i] * B[1] + q;
-        // int t1 = (C[cC] + t % 10) + q1;
-        // C[cC++] = t1 % 10;
-        // q1 = t1 / 10;
-        // q = t / 10;
-
-        // }
-        // if (q + q1 > 0) {
-        // C[cC++] += q + q1;
-        // }
-    }
-    // for (int i = cC - 1; i >= 0; i--) {
-    // System.out.println("" + C[i] + "");
+    // int A[] = new int[S1.length()];
+    // int cA = A.length;
+    // for (int i = 0; i < cA; i++) {
+    // A[i] = S1.charAt(cA - i - 1) - '0';
     // }
 
+    // System.out.print("\n Enter Number2: ");
+    // String S2 = input.nextLine();
+    // int cB = S2.length();
+
+    // int B[] = new int[S2.length()];
+    // for (int i = 0; i < cB; i++) {
+    // B[i] = S2.charAt(cB - i - 1) - '0';
+    // }
+
+    // System.out.print("Number1 is: ");
+    // for (int i = 0; i < S2.length(); i++) {
+    // System.out.print(B[i]);
+    // }
+
+    // System.out.print(" Number2 is: ");
+    // for (int i = 0; i < S1.length(); i++) {
+    // System.out.print(A[i]);
+    // }
+
+    // int C[] = new int[cA + cB + 2];
+    // for (int i = 0; i < C.length; i++) {
+    // C[i] = 0;
+    // }
+
+    // int cC = cA;
+    // for (int j = 0; j < cB; j++) {
+    // int q = 0;
+    // for (int i = 0; i < cA; i++) {
+    // int t = A[i] * B[j] + q + C[i + j];
+    // C[i + j] = t % 10;
+    // q = t / 10;
+
+    // }
+    // cC++;
+    // if (q > 0) {
+    // C[cC++] = q % 10;
+    // q = q / 10;
+    // }
+    // }
+
+    // System.out.print("\n");
+    // for (int i = cC - 1; i >= 0; i--) {
+    // System.out.print(" " + C[i]);
+    // }
+    // }
+
+    static void StringToNumber() {
+        String s = "123654";
+        int n = 0;
+        for (int x = 0; x < s.length(); x++) {
+            System.out.println("x:" + (s.charAt(x) - '0'));
+            n = n * 10 + (s.charAt(x) - '0');
+        }
+        System.out.println("n:" + n * 2);
+    }
+
+    static void ShowCharacter() {
+        for (int i = 0; i < 255; i++) {
+            char c = (char) i;
+            System.out.println(i + " " + c);
+        }
+    }
 }

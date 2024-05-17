@@ -20,9 +20,9 @@ public class gMain extends JFrame {
         this.setLayout(new FlowLayout());
 
         /////////////////////////// tools
-        toolBox = new ToolBox();
         info = new InfoPanel();
         draw = new DrawPanel(info);
+        toolBox = new ToolBox(draw);
 
         this.add(toolBox);
         this.add(draw);
