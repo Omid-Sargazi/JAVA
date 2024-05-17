@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "RandomCredentialsGenerator",
+      "request": "launch",
+      "mainClass": "string.RandomCredentialsGenerator",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "gMain",
       "request": "launch",
       "mainClass": "gMain.gMain",
