@@ -18,6 +18,5 @@ public class fileManager {
             e.printStackTrace();
         }
 
-        System.out.println("" + f1.listFiles());
     }
 }
