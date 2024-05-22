@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "readFile",
+      "request": "launch",
+      "mainClass": "string.readFile",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "ReadFile",
+      "request": "launch",
+      "mainClass": "string.ReadFile",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "fileManager",
+      "request": "launch",
+      "mainClass": "string.fileManager",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "month",
+      "request": "launch",
+      "mainClass": "string.month",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "RandomCredentialsGenerator",
       "request": "launch",
       "mainClass": "string.RandomCredentialsGenerator",

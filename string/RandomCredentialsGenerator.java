@@ -22,15 +22,15 @@ public class RandomCredentialsGenerator {
     }
 
     private static String generateRandomString(int length, String characters) {
+
         Random random = new Random();
         StringBuilder sb = new StringBuilder(length);
-
         for (int i = 0; i < length; i++) {
             int index = random.nextInt(characters.length());
             sb.append(characters.charAt(index));
         }
-
         return sb.toString();
+
     }
 
     private static void saveToFile(String username, String password) {
