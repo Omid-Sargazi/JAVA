@@ -3,6 +3,7 @@ package StringProblems;
 public class LeftTrim {
     public static void main(String[] args) {
         StrToInt();
+        StrToDouble();
 
         String S = "   x    ";
         int i1 = 0;
@@ -23,7 +24,7 @@ public class LeftTrim {
     }
 
     public static void StrToInt() {
-        String S = "98aa754aaa111";
+        String S = "98Sa754Omid111Sargazi";
         int p = 0;
         String temp = "";
 
@@ -34,7 +35,46 @@ public class LeftTrim {
                 temp += S.charAt(i);
             }
         }
-        System.out.println("StrToInt:  " + p);
-        System.out.println("String is: " + temp);
+        // System.out.println("StrToInt: " + p);
+        // System.out.println("String is: " + temp);
+    }
+
+    public static void StrToDouble() {
+        String s = "123.04";
+        double d = 0.0;
+        int sign = 1;
+        boolean hasFraction = false;
+        double fractionDivisor = 1.0;
+
+        int startIndex = 0;
+        if (s.charAt(0) == '-') {
+            startIndex = 1;
+            sign = -1;
+        } else if (s.charAt(0) == '+') {
+            startIndex = 1;
+        }
+
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+
+            if (c == '.') {
+                hasFraction = true;
+                continue;
+            }
+            if (c < '0' && c > '9') {
+                throw new IllegalArgumentException("Invalid character in input string: " + c);
+            }
+
+            if (hasFraction) {
+                fractionDivisor *= 10;
+                d = d + (c - '0') / fractionDivisor;
+
+            } else {
+                d = d * 10 + (c - '0');
+            }
+
+        }
+        System.out.print("result is: " + d * sign);
+        System.out.print("result +2 is: " + (d * sign + 2));
     }
 }
