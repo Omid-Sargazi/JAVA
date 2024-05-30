@@ -1,0 +1,8 @@
+Loan: Loan: 1984 to Alice
+Loan: Loan: Harry Potter and the Philosopher's Stone to Bob
+Loan: Loan: Animal Farm to Alice
+Return: Alice returned 1984
+Loan: Loan: 1984 to Alice
+Loan: Loan: Harry Potter and the Philosopher's Stone to Bob
+Loan: Loan: Animal Farm to Alice
+Return: Alice returned 1984

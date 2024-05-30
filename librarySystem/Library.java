@@ -18,6 +18,15 @@ public class Library {
         return this.books;
     }
 
+    public Book getBookByTitle(String title) {
+        for (Book book : books) {
+            if (book.getTitle().equalsIgnoreCase(title)) {
+                return book;
+            }
+        }
+        return null;
+    }
+
     public String toString() {
         return "Library has  " + books.size() + "  books.";
     }
