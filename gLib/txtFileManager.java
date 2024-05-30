@@ -4,18 +4,24 @@ import java.io.PrintWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner; // Import the Scanner class
+import java.io.FileWriter;
+import java.io.IOException;
 
 ////////////////////////////////////////////////////////////
 public class txtFileManager {
-    private String FileName;
+    private String fileName;
 
     public txtFileManager(String filename) {
-        this.FileName = filename;
+        this.fileName = filename;
     }
 
     //////////////////////////////////////////////////////////// create file
 
     public void createFile() {
+        File directory = new File("filesProject");
+        if (!directory.exists()) {
+            directory.mkdirs();
+        }
         setIntoFile("");
     }
 
@@ -28,13 +34,10 @@ public class txtFileManager {
     private void setIntoFile(String S) {
         try {
             // Ensure the directory exists
-            File directory = new File("filesProject");
-            if (!directory.exists()) {
-                directory.mkdirs();
-            }
+
             // Write to the file
-            PrintWriter out = new PrintWriter("filesProject/" + this.FileName);
-            out.print(S);
+            PrintWriter out = new PrintWriter("filesProject/" + this.fileName);
+            out.write("" + S);
             out.close();
 
         } catch (FileNotFoundException e) {
@@ -47,24 +50,28 @@ public class txtFileManager {
 
     //////////////////////////////////////////////////////////// get from file
     private String getFromFile() {
-        File file = new File(this.FileName);
-        String S = "";
+        StringBuilder S = new StringBuilder();
         try {
+            File file = new File("filesProject" + this.fileName);
             Scanner input = new Scanner(file);
             while (input.hasNextLine()) {
-                S = S + input.nextLine() + "\n";
+                S.append(input.nextLine()).append("\n");
             }
             input.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        return S;
+        return S.toString();
     }
 
     public void AppendRow(String newRow) {
-        String S = getFromFile();
-        S = S + "\n" + newRow;
-        setIntoFile(S);
-    }
+        try {
+            FileWriter fw = new FileWriter("filesProject/" + this.fileName, true);
+            fw.write(newRow + "\n");
+            fw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
+    }
 }
