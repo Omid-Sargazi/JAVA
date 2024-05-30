@@ -3,6 +3,132 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Mian",
+      "request": "launch",
+      "mainClass": "gLib.Mian",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "LeftTrim",
+      "request": "launch",
+      "mainClass": "StringProblems.LeftTrim",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "StrToInt",
+      "request": "launch",
+      "mainClass": "StringProblems.StrToInt",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "P001",
+      "request": "launch",
+      "mainClass": "StringProblems.P001",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "Mian",
+      "request": "launch",
+      "mainClass": "onlineResturant.Mian",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Library03.Main",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Library003.Main",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "LibraryManagementSystem",
+      "request": "launch",
+      "mainClass": "Inheritance002.LibraryManagementSystem",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Inheritance002.Main",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "Dependency",
+      "request": "launch",
+      "mainClass": "Inheritance.Dependency",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "Heart",
+      "request": "launch",
+      "mainClass": "Inheritance.Heart",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "MainCars",
+      "request": "launch",
+      "mainClass": "Inheritance.MainCars",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Inheritance.Main",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "MainLibrary.Main",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "ComposiAssociaDepend",
+      "request": "launch",
+      "mainClass": "Composition.ComposiAssociaDepend",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Aggregation.Main",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "Inheritance",
+      "request": "launch",
+      "mainClass": "Inheritance.Inheritance",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "glib.Main",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "readFile",
       "request": "launch",
       "mainClass": "string.readFile",

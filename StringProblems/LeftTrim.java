@@ -40,7 +40,7 @@ public class LeftTrim {
     }
 
     public static void StrToDouble() {
-        String s = "123.04";
+        String s = "-.00004";
         double d = 0.0;
         int sign = 1;
         boolean hasFraction = false;
@@ -54,14 +54,14 @@ public class LeftTrim {
             startIndex = 1;
         }
 
-        for (int i = 0; i < s.length(); i++) {
+        for (int i = startIndex; i < s.length(); i++) {
             char c = s.charAt(i);
 
             if (c == '.') {
                 hasFraction = true;
                 continue;
             }
-            if (c < '0' && c > '9') {
+            if (c < '0' || c > '9') {
                 throw new IllegalArgumentException("Invalid character in input string: " + c);
             }
 
