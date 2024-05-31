@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Subsequence",
+      "request": "launch",
+      "mainClass": "filesProject.Subsequence",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "Main",
       "request": "launch",
       "mainClass": "gLib02.Main",
