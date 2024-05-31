@@ -21,5 +21,13 @@ public class Main {
         Car car = new Car();
         car.startCar();
 
+        System.out.println(" //////////////////////////////" + "Polymorphism");
+
+        Shape shape;
+        shape = new Circle();
+        shape.draw();
+        shape = new Cube();
+        shape.draw();
+
     }
 }
