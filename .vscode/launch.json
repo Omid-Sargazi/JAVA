@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "gLib02.Main",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "CountingCharacter",
+      "request": "launch",
+      "mainClass": "filesProject.CountingCharacter",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "RemovingWhitespaces",
+      "request": "launch",
+      "mainClass": "filesProject.RemovingWhitespaces",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "P005",
       "request": "launch",
       "mainClass": "filesProject.P005",
