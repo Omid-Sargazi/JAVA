@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "P004",
+      "request": "launch",
+      "mainClass": "filesProject.P004",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "P003",
+      "request": "launch",
+      "mainClass": "filesProject.P003",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "P002",
       "request": "launch",
       "mainClass": "filesProject.P002",
