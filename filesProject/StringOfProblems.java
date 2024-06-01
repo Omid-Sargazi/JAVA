@@ -2,12 +2,15 @@ package filesProject;
 
 public class StringOfProblems {
     public static void main(String[] args) {
-        Concatenation();
-        LengthCalculation();
-        CharacterExtraction();
-        StringComparison();
-        ConverttoLowercase();
-        ConvertUppercase();
+        // Concatenation();
+        // LengthCalculation();
+        // CharacterExtraction();
+        // StringComparison();
+        // ConverttoLowercase();
+        // ConvertUppercase();
+        ReversString();
+        Palindrome();
+
         // charAtAll();
         System.out.println("String");
     }
@@ -96,5 +99,27 @@ public class StringOfProblems {
             }
         }
         System.out.println(result + "   Uppercase");
+    }
+
+    public static void ReversString() {
+        String S = "Omid";
+        String result = "";
+        for (int i = S.length() - 1; i >= 0; i--) {
+            result += S.charAt(i);
+        }
+        System.out.println(result);
+    }
+
+    public static void Palindrome() {
+        boolean isPalindrome = true;
+        String S = "omi!!imo";
+        int n = S.length();
+        for (int i = 0; i < n / 2; i++) {
+            if (S.charAt(i) != S.charAt(n - i - 1)) {
+                isPalindrome = false;
+                break;
+            }
+        }
+        System.out.println(isPalindrome);
     }
 }
