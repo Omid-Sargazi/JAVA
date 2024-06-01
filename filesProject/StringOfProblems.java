@@ -8,8 +8,9 @@ public class StringOfProblems {
         // StringComparison();
         // ConverttoLowercase();
         // ConvertUppercase();
-        ReversString();
-        Palindrome();
+        // ReversString();
+        // Palindrome();
+        RemoveVowels();
         CountVowelsConsonants();
 
         // charAtAll();
@@ -136,4 +137,18 @@ public class StringOfProblems {
         }
         System.out.println(count);
     }
+
+    public static void RemoveVowels() {
+        String s = "dkmkmasd;njeliwmcs";
+        String result = "";
+
+        for (char ch : s.toCharArray()) {
+            if (ch != 'a' && ch != 'e' && ch != 'u' && ch != 'i' && ch != 'o' && ch != 'A' && ch != 'U' && ch != 'O'
+                    && ch != 'E') {
+                result = result + ch;
+            }
+        }
+        System.out.println(result);
+    }
+
 }
