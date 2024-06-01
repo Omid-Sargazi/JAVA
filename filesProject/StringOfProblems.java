@@ -6,6 +6,9 @@ public class StringOfProblems {
         LengthCalculation();
         CharacterExtraction();
         StringComparison();
+        ConverttoLowercase();
+        ConvertUppercase();
+        // charAtAll();
         System.out.println("String");
     }
 
@@ -52,5 +55,46 @@ public class StringOfProblems {
             }
         }
         System.out.println("Strings are equals:  " + areEqaul);
+    }
+
+    public static void charAtAll() {
+        String s = "";
+        for (char i = ' '; i < 274; i++) {
+            System.out.println(i);
+        }
+
+        for (int i = 0; i < 274; i++) {
+            System.out.println(i + " " + (char) (i));
+        }
+    }
+
+    public static void ConverttoLowercase() {
+        String S = "helloWorld";
+        String result = "";
+
+        for (char ch : S.toCharArray()) {
+            if (ch >= 'a' && ch <= 'z') {
+                result = result + ch;
+                // System.out.println((ch));
+            } else {
+                result = result + (char) (ch + 32);
+                // System.out.println((char) (ch + 32));
+            }
+        }
+        System.out.println(result + "       ConverttoLowercase");
+    }
+
+    public static void ConvertUppercase() {
+        String s = "helloWorld";
+        String result = "";
+
+        for (char ch : s.toCharArray()) {
+            if (ch > 'a' && ch < 'z') {
+                result = result + (char) (ch - 32);
+            } else {
+                result = result + ch;
+            }
+        }
+        System.out.println(result + "   Uppercase");
     }
 }
