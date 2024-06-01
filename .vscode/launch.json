@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "StringOfProblems",
+      "request": "launch",
+      "mainClass": "filesProject.StringOfProblems",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "Concatenation",
+      "request": "launch",
+      "mainClass": "filesProject.Concatenation",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "HospitalManagementSystem",
       "request": "launch",
       "mainClass": "HospitalManagementSystem.HospitalManagementSystem",

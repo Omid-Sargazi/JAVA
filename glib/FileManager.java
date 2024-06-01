@@ -40,7 +40,7 @@ public class FileManager {
         createFile();
     }
 
-    public int SelectCount() {
+    // public int SelectCount() {
 
     }
 

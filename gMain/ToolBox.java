@@ -78,7 +78,7 @@ public class ToolBox extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // TODO Auto-generated method stub
-                draw.setTools(1);
+                // draw.setTools(1);
             }
 
         });
