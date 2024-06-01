@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "HospitalManagementSystem",
+      "request": "launch",
+      "mainClass": "HospitalManagementSystem.HospitalManagementSystem",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "HashMapExample",
+      "request": "launch",
+      "mainClass": "gLib.filesProject.HashMapExample",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "Subsequence",
       "request": "launch",
       "mainClass": "filesProject.Subsequence",
