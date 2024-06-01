@@ -10,6 +10,7 @@ public class StringOfProblems {
         // ConvertUppercase();
         ReversString();
         Palindrome();
+        CountVowelsConsonants();
 
         // charAtAll();
         System.out.println("String");
@@ -121,5 +122,18 @@ public class StringOfProblems {
             }
         }
         System.out.println(isPalindrome);
+    }
+
+    public static void CountVowelsConsonants() {
+        // a,e,u,i,o
+        String s = "ooomid";
+        int count = 0;
+        for (char ch : s.toCharArray()) {
+            if (ch == 'a' || ch == 'e' || ch == 'u' || ch == 'i' || ch == 'o' || ch == 'A' || ch == 'U' || ch == 'O'
+                    || ch == 'E') {
+                count++;
+            }
+        }
+        System.out.println(count);
     }
 }
