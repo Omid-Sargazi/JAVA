@@ -3,6 +3,7 @@ package filesProject;
 public class StringOfProblems02 {
     public static void main(String[] args) {
         FindSubstring();
+        ReplaceCharacter();
         // System.out.println("End of program");
     }
 
@@ -23,5 +24,22 @@ public class StringOfProblems02 {
                 System.out.println("start: " + i);
             }
         }
+    }
+
+    public static void ReplaceCharacter() {
+        String s = "Saleh";
+        char oldCahr = 'a';
+        char newChar = 'o';
+        String result = "";
+
+        for (char ch : s.toCharArray()) {
+            if (ch != oldCahr) {
+                result = result + ch;
+            } else {
+                result = result + 'o';
+            }
+        }
+        System.out.println(result);
+
     }
 }
