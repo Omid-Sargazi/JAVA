@@ -10,8 +10,9 @@ public class StringOfProblems {
         // ConvertUppercase();
         // ReversString();
         // Palindrome();
-        RemoveVowels();
-        CountVowelsConsonants();
+        // RemoveVowels();
+        // CountVowelsConsonants();
+        FindSubstring();
 
         // charAtAll();
         System.out.println("String");
@@ -151,4 +152,24 @@ public class StringOfProblems {
         System.out.println(result);
     }
 
+    public static void FindSubstring() {
+        String s1 = "Aooomid omid";
+        String s2 = "omid";
+        int flag = 0;
+
+        for (int i = 0; i <= s1.length() - s2.length(); i++) {
+            flag = 1;
+            for (int j = 0; j < s2.length(); j++) {
+                if (s2.charAt(j) != s1.charAt(i + j)) {
+                    flag = 0;
+                    break;
+                }
+            }
+            if (flag == 1) {
+                System.out.println(i + "");
+            }
+
+        }
+        System.err.println(result + "findSubstring");
+    }
 }
