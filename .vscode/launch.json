@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "StringRotationCheck",
+      "request": "launch",
+      "mainClass": "filesProject.StringRotationCheck",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "AddTwoBigNumber",
+      "request": "launch",
+      "mainClass": "filesProject.AddTwoBigNumber",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "ExpressionEvaluator",
       "request": "launch",
       "mainClass": "filesProject.ExpressionEvaluator",
