@@ -3,7 +3,7 @@ package filesProject;
 import java.util.ArrayList;
 import java.util.List;
 
-class Point {
+public class Point {
     protected double x, y;
 
     public Point(double x, double y) {
