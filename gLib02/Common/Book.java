@@ -8,7 +8,8 @@ public class Book {
     private String subject;
 
     public void setBNO(String bNO) {
-        BNO = bNO;
+        if (bNO.length() >= 3 && bNO.length() <= 10)
+            BNO = bNO;
     }
 
     public void setTitle(String title) {
