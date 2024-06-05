@@ -1,4 +1,4 @@
-package gLib02;
+package gLib02.FileMaanger;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;

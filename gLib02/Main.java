@@ -3,6 +3,8 @@ package gLib02;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
+import gLib02.FileMaanger.TxtFileManager;
+
 public class Main {
     public static void main(String[] args) {
 
