@@ -47,4 +47,16 @@ public class Library {
         }
     }
 
+    public void updateUserProfile(int userID, String newEmail, String firstName, String lastName) {
+        User user = loggedInUsers.get(userID);
+        if (user != null) {
+            user.setEmail(newEmail);
+            user.setFirstName(firstName);
+            user.setLastName(lastName);
+            System.out.println("User profile updated successfully.");
+        } else {
+            System.out.println("User is not logged in.");
+        }
+    }
+
 }
