@@ -38,4 +38,13 @@ public class Library {
         }
     }
 
+    public void logout(int userID) {
+        if (loggedInUsers.containsKey(userID)) {
+            loggedInUsers.remove(userID);
+            System.out.println("User logged out successfully.");
+        } else {
+            System.out.println("User is not logged in.");
+        }
+    }
+
 }
