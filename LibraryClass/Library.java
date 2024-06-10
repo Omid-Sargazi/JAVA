@@ -59,4 +59,15 @@ public class Library {
         }
     }
 
+    public void changePassword(int userID, String currentPassword, String newPassword) {
+        User user = loggedInUsers.get(userID);
+        if (user != null && user.getPassword().equals(currentPassword)) {
+            user.setPassword(newPassword);
+            System.out.println("Password changed successfully.");
+        } else {
+            System.out.println("Incorrect current password or user is not logged in.");
+
+        }
+    }
+
 }
