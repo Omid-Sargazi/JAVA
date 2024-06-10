@@ -70,4 +70,25 @@ public class Library {
         }
     }
 
+    public void resetPassword(int userId, String email) {
+        User user = users.get(email);
+        if (user != null && user.getEmail().equals(email)) {
+            user.setPassword("defaultPassword");
+            System.out.println("Password reset successfully. Default password is 'defaultPassword'.");
+        } else {
+            System.out.println("User not found or email mismatch.");
+        }
+    }
+
+    public void deleteUserAccount(int userID) {
+        User user = loggedInUsers.get(userID);
+        if (user != null) {
+            users.remove(user.getUsername());
+            loggedInUsers.remove(userID);
+            System.out.println("User account deleted successfully.");
+        } else {
+            System.out.println("User is not logged in.");
+        }
+    }
+
 }
