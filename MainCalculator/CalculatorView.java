@@ -55,4 +55,60 @@ public class CalculatorView {
         frame.setVisible(true);
     }
 
+    public JFrame getFrame() {
+        return frame;
+    }
+
+    public void setFrame(JFrame frame) {
+        this.frame = frame;
+    }
+
+    public JTextField getDisplay() {
+        return display;
+    }
+
+    public void setDisplay(JTextField display) {
+        this.display = display;
+    }
+
+    public JPanel getPanel() {
+        return panel;
+    }
+
+    public void setPanel(JPanel panel) {
+        this.panel = panel;
+    }
+
+    public JButton[] getNumberButtons() {
+        return numberButtons;
+    }
+
+    public void setNumberButtons(JButton[] numberButtons) {
+        this.numberButtons = numberButtons;
+    }
+
+    public JButton[] getOperatorButtons() {
+        return operatorButtons;
+    }
+
+    public void setOperatorButtons(JButton[] operatorButtons) {
+        this.operatorButtons = operatorButtons;
+    }
+
+    public JButton getEqualsButton() {
+        return equalsButton;
+    }
+
+    public void setEqualsButton(JButton equalsButton) {
+        this.equalsButton = equalsButton;
+    }
+
+    public JButton getClearButton() {
+        return clearButton;
+    }
+
+    public void setClearButton(JButton clearButton) {
+        this.clearButton = clearButton;
+    }
+
 }
