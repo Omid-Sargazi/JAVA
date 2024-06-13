@@ -19,6 +19,14 @@ public class CalculatorView {
         for (int i = 0; i < 10; i++) {
             numberButtons[i] = new JButton(String.valueOf(i));
         }
+        String[] operators = { "+", "-", "*", "/" };
+        operatorButtons = new JButton[operators.length];
+        for (int i = 0; i < operators.length; i++) {
+            operatorButtons[i] = new JButton(operators[i]);
+        }
+
+        equalsButton = new JButton("=");
+        clearButton = new JButton("C");
 
         initialize();
     }
@@ -36,6 +44,12 @@ public class CalculatorView {
         for (JButton button : numberButtons) {
             panel.add(button);
         }
+        for (JButton button : operatorButtons) {
+            panel.add(button);
+        }
+        panel.add(equalsButton);
+        panel.add(clearButton);
+
         frame.add(panel, BorderLayout.CENTER);
 
         frame.setVisible(true);
