@@ -47,9 +47,4 @@ public class Book {
         Subject = subject;
     }
 
-    @Override
-    public String toString() {
-        return "Book [BNO=" + BNO + ", Title=" + Title + ", pages=" + pages + ", Subject=" + Subject + "]";
-    }
-
 }
