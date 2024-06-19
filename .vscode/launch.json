@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "OnlineShoppingStore",
+      "request": "launch",
+      "mainClass": "SOLID.OnlineShoppingStore.OnlineShoppingStore",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "Main",
       "request": "launch",
       "mainClass": "SOLID.BookClass.Main",
