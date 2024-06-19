@@ -13,7 +13,14 @@ public class Main {
         Bird bird = new Sparrow();
         bird.fly();
         bird = new Ostrich();
-        bird.fly();
+        // bird.fly();
+        System.out.println("////////////////////////////////");
+        ////////////////////////////////////////// Bird
+
+        FlyingBird birdlsp = new SparrowLSP();
+        birdlsp.fly();
+
+        BirdLSP ostrich = new OstrichLSP();
 
     }
 
