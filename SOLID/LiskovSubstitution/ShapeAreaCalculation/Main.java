@@ -9,6 +9,11 @@ public class Main {
 
         ShapeLSP shapeLSP = new RectangleLSP(3, 3);
         System.out.println("Area LSP  " + shapeLSP.area());
+        //////////////////////////////
+        Bird bird = new Sparrow();
+        bird.fly();
+        bird = new Ostrich();
+        bird.fly();
 
     }
 
