@@ -5,15 +5,11 @@ public class Animal {
         System.out.println("some sound");
     }
 
-    public static void main(String[] args) {
-        Dog dog = new Dog();
-        dog.sound();
-    }
 }
 
 class Dog extends Animal {
     @Override
     void sound() {
-        System.out.println("Bark");
+        System.out.println("Bark....");
     }
 }

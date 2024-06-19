@@ -68,7 +68,7 @@ public class TxtFileManager {
         }
     }
 
-    private String[] getArrayFromFile() {
+    public String[] getArrayFromFile() {
         File file = new File(this.FileName);
         String S[] = new String[Rows];
         int c = 0;

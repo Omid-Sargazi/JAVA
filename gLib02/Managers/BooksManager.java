@@ -20,4 +20,21 @@ public class BooksManager {
 
         fm.appendRow(S);
     }
+
+    private Book Str2Book(String S) {
+        String A[] = S.split(Commons.SPILITER);
+        Book b = new Book();
+        b.setBNO(A[0]);
+        b.setTitle(A[1]);
+        b.setAuthor(A[2]);
+        b.setPages(Integer.parseInt(A[3]));
+        b.setSubject(A[4]);
+        return b;
+    }
+
+    // public Book[] selectAll() {
+    // String S[] = fm.getArrayFromFile();
+
+    // Book b[] =
+    // }
 }

@@ -81,7 +81,7 @@ public class TxtFileManager {
         }
     }
 
-    private String[] getArrayFromFile() throws FileNotFoundException {
+    public String[] getArrayFromFile() throws FileNotFoundException {
 
         File file = new File("myFiles/" + this.FileName);
         String S[] = new String[Rows];

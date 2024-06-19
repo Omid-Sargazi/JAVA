@@ -3,7 +3,7 @@ package gMianLib.Common;
 public class Book {
     private String BNO;
     private String Title;
-    private int pages;
+    private int Pages;
     private String Subject;
     private String Author;
 
@@ -32,11 +32,11 @@ public class Book {
     }
 
     public int getPages() {
-        return pages;
+        return Pages;
     }
 
     public void setPages(int pages) {
-        this.pages = pages;
+        Pages = pages;
     }
 
     public String getSubject() {

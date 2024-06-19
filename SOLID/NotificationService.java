@@ -7,6 +7,7 @@ public class NotificationService {
         } else if (type.equals("sms")) {
             sendSMS(message);
         } else if (type.equals("push")) {
+
             sendPushNotification(message);
         } else {
             try {
