@@ -8,10 +8,15 @@ public class Main {
         // player = new VideoPlayer();
         // player.playVideo();
 
-        AnimalLSP animal = new DogLSP();
-        animal.makeSound();
-        animal = new SnakeLSP();
-        animal.makeSound();
+        // AnimalLSP animal = new DogLSP();
+        // animal.makeSound();
+        // animal = new SnakeLSP();
+        // animal.makeSound();
+
+        PrinterLSP printer = new TextPrinterLSP();
+        printer.print();
+        printer = new ImagePrinterLSP();
+        printer.print();
 
     }
 
