@@ -1,4 +1,4 @@
-package SOLID;
+package SOLID.NotificationService;
 
 public class NotificationWithoutSOLID {
     public void sendNotification(String type, String message) {
