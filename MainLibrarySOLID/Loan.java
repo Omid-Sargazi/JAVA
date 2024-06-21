@@ -2,64 +2,26 @@ package MainLibrarySOLID;
 
 import java.util.Date;
 
+import java.util.Date;
+
 public class Loan {
-    private String id;
-    private Book book;
-    private Member member;
+    private String loanId;
+    private String userId;
+    private String bookIsbn;
     private Date loanDate;
-    private Date returnDate;
+    private Date dueDate;
+    private boolean isReturned;
 
-    public Loan(String id, Book book, Member member) {
-        this.id = id;
-        this.book = book;
-        this.member = member;
-        this.loanDate = new Date();
-        this.returnDate = new Date();
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public Book getBook() {
-        return book;
-    }
-
-    public void setBook(Book book) {
-        this.book = book;
-    }
-
-    public Member getMember() {
-        return member;
-    }
-
-    public void setMember(Member member) {
-        this.member = member;
-    }
-
-    public Date getLoanDate() {
-        return loanDate;
-    }
-
-    public void setLoanDate(Date loanDate) {
+    // Constructor
+    public Loan(String loanId, String userId, String bookIsbn, Date loanDate, Date dueDate) {
+        this.loanId = loanId;
+        this.userId = userId;
+        this.bookIsbn = bookIsbn;
         this.loanDate = loanDate;
+        this.dueDate = dueDate;
+        this.isReturned = false;
     }
 
-    public Date getReturnDate() {
-        return returnDate;
-    }
-
-    public void setReturnDate(Date returnDate) {
-        this.returnDate = returnDate;
-    }
-
-    public void returnBook() {
-        this.returnDate = new Date();
-        book.setAvailable(true);
-    }
-
+    // Getters and Setters
+    // Other methods
 }
