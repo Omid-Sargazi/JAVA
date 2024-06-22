@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Client",
+      "request": "launch",
+      "mainClass": "DesignPattern.foodorderingFactoryPattern.Client",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "Clinet",
       "request": "launch",
       "mainClass": "DesignPattern.VehicleFactoryPattern.Clinet",
