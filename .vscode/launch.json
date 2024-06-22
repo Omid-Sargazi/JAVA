@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Clinet",
+      "request": "launch",
+      "mainClass": "DesignPattern.VehicleFactoryPattern.Clinet",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "Main",
       "request": "launch",
       "mainClass": "DesignPattern.Main",
