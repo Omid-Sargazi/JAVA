@@ -5,6 +5,13 @@
       "type": "java",
       "name": "Main",
       "request": "launch",
+      "mainClass": "DesignPattern.DatabaseFactory.Main",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
       "mainClass": "DesignPattern.ShapeFActoryDesign.Main",
       "projectName": "JAVA_bdd36cea"
     },
