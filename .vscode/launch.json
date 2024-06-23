@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Client",
+      "request": "launch",
+      "mainClass": "DesignPattern.FactoryMethod.PaymentGatewayFactory.Client",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "FactoryMethodExample",
       "request": "launch",
       "mainClass": "DesignPattern.Peoduct.FactoryMethodExample",
