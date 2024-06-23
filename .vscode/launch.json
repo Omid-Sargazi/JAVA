@@ -5,6 +5,13 @@
       "type": "java",
       "name": "Main",
       "request": "launch",
+      "mainClass": "SOLID.DataPersistence.Main",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
       "mainClass": "SOLID.NotificationSystem.Main",
       "projectName": "JAVA_bdd36cea"
     },
