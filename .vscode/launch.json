@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "FactoryMethodExample",
+      "request": "launch",
+      "mainClass": "DesignPattern.Peoduct.FactoryMethodExample",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "Main",
       "request": "launch",
       "mainClass": "SOLID.DataPersistence.Main",
