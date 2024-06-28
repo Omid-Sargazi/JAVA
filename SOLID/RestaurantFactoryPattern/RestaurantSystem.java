@@ -14,7 +14,6 @@ public class RestaurantSystem {
 
     public void placeOrder(User customer, String foodType) {
         Food food = null;
-        Food food = null;
         if (foodType.equalsIgnoreCase("Pizza")) {
             food = new Pizza();
         } else if (foodType.equalsIgnoreCase("Salad")) {
