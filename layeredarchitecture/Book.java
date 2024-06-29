@@ -1,4 +1,4 @@
-package 3layeredarchitecture;
+package layeredarchitecture;
 
 public class Book {
     private String title;
@@ -6,12 +6,11 @@ public class Book {
     private String isbn;
     private boolean isAvailable;
 
-    public Book(String title, String author, String isbn)
-    {
-        this.title=title;
-        this.author=author;
-        this.isbn=isbn;
-        this.isAvailable=true;
+    public Book(String title, String author, String isbn) {
+        this.title = title;
+        this.author = author;
+        this.isbn = isbn;
+        this.isAvailable = true;
     }
 
     public String getTitle() {
@@ -46,5 +45,4 @@ public class Book {
         this.isAvailable = isAvailable;
     }
 
-    
 }
