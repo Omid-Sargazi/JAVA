@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "OOPAndSOLID.Main",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "LibraryUI",
       "request": "launch",
       "mainClass": "layeredarchitecture.LibraryUI",
