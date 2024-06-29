@@ -24,4 +24,14 @@ public class LibraryController {
 
         throw new IllegalStateException("Book not found or not borrowed");
     }
+
+    public void returnBook(String isbn) {
+        for (Book book : libraryService.getBooks()) {
+            if (book.getIsbn().equals(isbn) && !book.isAvailable()) {
+                libraryService.returnBook(book);
+                return;
+            }
+        }
+        throw new IllegalStateException("Book not found or not borrowed");
+    }
 }
