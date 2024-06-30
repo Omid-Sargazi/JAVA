@@ -5,6 +5,13 @@
       "type": "java",
       "name": "Main",
       "request": "launch",
+      "mainClass": "SOLID.ShapeFactory.Main",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
       "mainClass": "OOPAndSOLID.Main",
       "projectName": "JAVA_bdd36cea"
     },
