@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Array1",
+      "request": "launch",
+      "mainClass": "Arrays.TwoDimensions.Array1",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "Main",
       "request": "launch",
       "mainClass": "BankAccountFactory.Main",
