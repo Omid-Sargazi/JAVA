@@ -29,11 +29,30 @@ public class MatrixOperations {
         System.out.println();
     }
 
+    public static void printNthRow(int[][] matrix, int n) {
+        System.out.println("Row" + n + ": ");
+        for (int j = 0; j < matrix[n].length; j++) {
+            System.out.print(matrix[n][j] + " ");
+        }
+        System.out.println("");
+    }
+
+    public static void swapRowWithColumn(int[][] matrix, int n) {
+        System.out.println("Swapping row " + n + " with column " + n);
+        for (int i = 0; i < matrix.length; i++) {
+            int temp = matrix[n][i];
+            matrix[n][i] = matrix[i][n];
+            matrix[i][n] = temp;
+        }
+    }
+
     public static void main(String[] args) {
         int rows = 5;
         int cols = 5;
         int[][] matrix = createMatrix(rows, cols);
         printMainDiagonal(matrix);
         printMainMatrix(matrix);
+        System.out.println("Row");
+        printNthRow(matrix, 2);
     }
 }
