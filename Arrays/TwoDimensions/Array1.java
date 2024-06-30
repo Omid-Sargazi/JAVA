@@ -8,7 +8,7 @@ public class Array1 {
     }
 
     public static void Array() {
-        int rows = 4;
+        int rows = 5;
         int cols = 5;
         int A[][] = new int[rows][cols];
 
@@ -29,6 +29,12 @@ public class Array1 {
 
         }
         System.out.println("");
+
+        //////////////////// Print main diameter
+
+        for (int x = 0; x < rows; x++) {
+            System.out.print(A[x][x]);
+        }
 
     }
 }
