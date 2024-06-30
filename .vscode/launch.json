@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MatrixOperations",
+      "request": "launch",
+      "mainClass": "Arrays.TwoDimensions.MatrixOperations",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "Array1",
       "request": "launch",
       "mainClass": "Arrays.TwoDimensions.Array1",
