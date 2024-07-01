@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "P03",
+      "request": "launch",
+      "mainClass": "WithoutIf.ProblemsWIthJava.P03",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "divisors",
+      "request": "launch",
+      "mainClass": "WithoutIf.ProblemsWIthJava.divisors",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "P02",
+      "request": "launch",
+      "mainClass": "WithoutIf.ProblemsWIthJava.P02",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "Shows",
       "request": "launch",
       "mainClass": "WithoutIf.ProblemsWIthJava.Shows",
