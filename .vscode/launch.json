@@ -5,6 +5,13 @@
       "type": "java",
       "name": "Main",
       "request": "launch",
+      "mainClass": "WithoutIf.ProblemsWIthJava.NotificationInterface.NotificationInterface.Main",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
       "mainClass": "WithoutIf.ProblemsWIthJava.NotificationInterface.Main",
       "projectName": "JAVA_bdd36cea"
     },
