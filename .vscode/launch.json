@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "WithoutIf.ProblemsWIthJava.NotificationInterface.Main",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
+      "name": "P04",
+      "request": "launch",
+      "mainClass": "WithoutIf.ProblemsWIthJava.P04",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "P03",
       "request": "launch",
       "mainClass": "WithoutIf.ProblemsWIthJava.P03",
