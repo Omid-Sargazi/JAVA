@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "AbsoluteANumber",
+      "request": "launch",
+      "mainClass": "WithoutIf.AbsoluteANumber",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "MatrixOperations",
       "request": "launch",
       "mainClass": "Arrays.TwoDimensions.MatrixOperations",
