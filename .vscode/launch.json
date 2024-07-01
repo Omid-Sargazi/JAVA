@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Shows",
+      "request": "launch",
+      "mainClass": "WithoutIf.ProblemsWIthJava.Shows",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "AbsoluteANumber",
       "request": "launch",
       "mainClass": "WithoutIf.AbsoluteANumber",
