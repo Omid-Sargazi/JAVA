@@ -19,6 +19,10 @@ public class Doctor extends Person {
         return patients;
     }
 
+    public void setPatients(List<Patient> patients) {
+        this.patients = patients;
+    }
+
     @Override
     public void showDetails() {
         // TODO Auto-generated method stub
