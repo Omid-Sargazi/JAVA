@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "HospitalMain",
+      "request": "launch",
+      "mainClass": "Hospital.FactoryMethodPatternHospital.main.HospitalMain",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "MatrixMultiplication",
       "request": "launch",
       "mainClass": "MatrixProblems.MatrixMultiplication",
