@@ -28,4 +28,6 @@ public abstract class Person {
         return "Person [id=" + id + ", name=" + name + ", age=" + age + "]";
     }
 
+    public abstract void showDetails();
+
 }
