@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MatrixMultiplication",
+      "request": "launch",
+      "mainClass": "MatrixProblems.MatrixMultiplication",
+      "projectName": "JAVA_bdd36cea"
+    },
+    {
+      "type": "java",
       "name": "Main",
       "request": "launch",
       "mainClass": "WithoutIf.ProblemsWIthJava.NotificationInterface.NotificationInterface.Main",
