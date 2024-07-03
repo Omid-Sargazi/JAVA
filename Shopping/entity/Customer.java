@@ -1,9 +1,14 @@
 package Shopping.entity;
 
 public class Customer extends User {
+    private ShoppingCart shoppingCart;
 
     public Customer(String username, String password) {
         super(username, password);
+    }
+
+    public ShoppingCart getShoppingCart() {
+        return shoppingCart;
     }
 
     @Override
